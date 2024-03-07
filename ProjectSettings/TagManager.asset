@@ -8,6 +8,7 @@ TagManager:
   - Portal
   - Laser Cube
   - Laser Receiver
+  - CorrectCube
   layers:
   - Default
   - TransparentFX
