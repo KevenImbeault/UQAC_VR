@@ -25,7 +25,7 @@ public class CubeController : MonoBehaviour
 
     public void TriggerLaserStop()
     {
-        if(HasLaser)
+        if (HasLaser)
         {
             Destroy(newLaser);
             HasLaser = false;
