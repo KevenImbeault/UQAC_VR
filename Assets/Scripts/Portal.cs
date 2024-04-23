@@ -49,9 +49,11 @@ public class Portal : MonoBehaviour
         {
             Vector3 objPos = transform.InverseTransformPoint(portalObjects[i].transform.position);
 
-            if (objPos.z > 0.0f)
+            if (objPos.z > 0.0f && !portalObjects[i].hasWarped)
             {
+                Debug.Log("Warping object");
                 portalObjects[i].Warp();
+                portalObjects[i].hasWarped = true;
             }
         }
     }

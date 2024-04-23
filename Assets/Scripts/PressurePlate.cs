@@ -10,12 +10,9 @@ public class PressurePlate : ActivatorScript
     
     private bool isActivated = false; // pour suivre si la plaque est activé
     private Renderer renderer; // Le rendu de la plaque pour changer la couleur
-    private Rigidbody rb; // le rb de la plaque
 
     void Start()
     {
-        // le rb de la plaque
-        rb = GetComponent<Rigidbody>();
         // le render de la plaque
         renderer = GetComponent<Renderer>();
    

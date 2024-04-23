@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 8534673496478426643}
   - component: {fileID: 6521952010498103850}
   - component: {fileID: 571392956202121485}
-  - component: {fileID: 746794567751634392}
-  - component: {fileID: 825315916213142017}
   - component: {fileID: 2184123379521234808}
+  - component: {fileID: 4067711184499468797}
   m_Layer: 0
   m_Name: Pressure plate
   m_TagString: Untagged
@@ -86,7 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &746794567751634392
+--- !u!114 &2184123379521234808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508248911726084102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cdde98a6d7dce47a4e2241a3c43957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onGoalCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  onGoalFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  activatedColor: {r: 0, g: 1, b: 0, a: 1}
+  cubeTag: CorrectCube
+--- !u!65 &4067711184499468797
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,48 +124,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.5353502, z: 1}
-  m_Center: {x: 0, y: -0.26767486, z: 0}
---- !u!54 &825315916213142017
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6508248911726084102}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 90
-  m_CollisionDetection: 0
---- !u!114 &2184123379521234808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6508248911726084102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6cdde98a6d7dce47a4e2241a3c43957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropDistance: 0.1
-  activatedColor: {r: 0, g: 1, b: 0, a: 1}
-  cubeTag: CorrectCube
-  exitDelay: 1
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
